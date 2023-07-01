@@ -2,7 +2,7 @@
 require __DIR__ . "/assets/config.php";
 require __DIR__ . "/../vendor/autoload.php";
 
-use RobsonVLeite\CafeApi\Subscriptions;
+use ThomasVMoraes\CafeApi\Subscriptions;
 
 $subscription = new Subscriptions(
     "localhost/fsphp/cafeapi/",
@@ -31,7 +31,7 @@ echo "<h1>CREATE</h1>";
 $create = $subscription->create([
     "plan_id" => 1,
     "card_number" => "5583983765729729",
-    "card_holder_name" => "ROBSON LEITE",
+    "card_holder_name" => "THOMAS MORAES",
     "card_expiration_date" => "12/2020",
     "card_cvv" => "654"
 ]);
@@ -63,7 +63,7 @@ echo "<h1>UPDATE</h1>";
 //$update = $subscription->update(["plan_id" => 2]);
 $update = $subscription->update([
     "card_number" => "4024007190034479",
-    "card_holder_name" => "ROBSON LEITE",
+    "card_holder_name" => "THOMAS MORAES",
     "card_expiration_date" => "12/2020",
     "card_cvv" => "654"
 ]);

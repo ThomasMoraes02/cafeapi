@@ -2,11 +2,11 @@
 require __DIR__ . "/assets/config.php";
 require __DIR__ . "/../vendor/autoload.php";
 
-use RobsonVLeite\CafeApi\Me;
+use ThomasVMoraes\CafeApi\Me;
 
 $me = new Me(
     "localhost/fsphp/cafeapi/",
-    "robsonvleite@gmail.com",
+    "thomasvmoraes@gmail.com",
     "12345678"
 );
 
